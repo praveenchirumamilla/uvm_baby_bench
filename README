@@ -1,0 +1,14 @@
+
+1. Compilation command
+
+vcs -sverilog /import/vcs-release/vcsK-2015.09-SP2-7-mx/etc/uvm-1.2/src/dpi/uvm_dpi.cc -CFLAGS -DVCS /import/vcs-release/vcsK-2015.09-SP2-7-mx/etc/uvm-1.2/src/uvm_pkg.sv +incdir+/import/vcs-release/vcsK-2015.09-SP2-7-mx/etc/uvm-1.2/src+/import/vcs-release/vcsK-2015.09-SP2-7-mx/etc/uvm-1.1/vcs -timescale="1ns/100ps" -l comp.log -debug_all agent_pkg.sv test_pkg.sv tb_top.sv +vcs+dumpvars +UVM_NO_RELNOTES
+
+2. run command
+ ./simv +UVM_TESTNAME=test_base +UVM_NO_RELNOTES
+
+3. opening DUMP
+
+/home/pkchirum/verdi.sn3.uvm.cmd -sverilog agent_pkg.sv test_pkg.sv tb_top.sv +incdir+/import/vcs-release/vcsK-2015.09-SP2-7-mx/etc/uvm-1.2
+
+Directory Structure
+
